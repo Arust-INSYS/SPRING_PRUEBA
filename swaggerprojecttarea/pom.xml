@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.3</version>
+		<version>2.6.9</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ista</groupId>
-	<artifactId>proyectotfc</artifactId>
+	<groupId>com.ista.springboot.app</groupId>
+	<artifactId>swaggerprojecttarea</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>proyectotfc</name>
-	<description>Demo project for Spring Boot</description>
+	<name>swaggerprojecttarea</name>
+	<description>Proyecto spring con swagger</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -42,13 +42,8 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -56,7 +51,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+		 <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>1.6.9</version>
+   </dependency>
 	</dependencies>
 
 	<build>
